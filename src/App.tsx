@@ -1,14 +1,15 @@
-import debugData from "./utils/debugData";
+import { debugData } from "./utils/debugData";
+import Menu from "./components/Menu";
 
-debugData({
-	action: "setVisible",
+debugData<boolean>([{
+    action: "setVisible",
 	data: true,
-})
+}])
 
 function App() {
 
     return (
-            <p className="text-green-500 bg-red-700">Test</p>
+            <Menu />
     );
 }
 
